@@ -70,7 +70,7 @@ let Afternoon = document.getElementById('afternoon')
 let even = document.getElementById('evening')
 let nig = document.getElementById('sleep')
 let i = document.getElementById('b5')
- let hr = 23;
+ let w = document.getElementsByClassName('wake')
 
 
 function callMe(){
@@ -81,18 +81,23 @@ function callMe(){
     if(hr===parseInt(morning.value)){
         i.style.backgroundImage="url(./Component 30 1.jpg)" 
         text.innerText = "GOOD MORNING!! WAKE UP !!"
+        w[0].innerHTML=morning.value;
     }
     else if (hr===parseInt(afternoon.value)){
         text.innerHTML = "GOOD AFTERNOON !! TAKE SOME SLEEP"
         i.style.backgroundImage="url(./Afternoon.png)"
+         w[1].innerHTML=Afternoon.value;
     }
     else if(hr=== parseInt(even.value)){
         text.innerHTML = "GOOD EVENING !!"
         i.style.backgroundImage="url(./lunch.png)"
+             w[2].innerHTML=even.value;
     }
     else if(hr=== parseInt(nig.value)){
         text.innerHTML = " GOOD NIGHT !!"
         i.style.backgroundImage="url(./night1.png)"
+         w[3].innerHTML=nig.value;
+        
     }
 
     }
