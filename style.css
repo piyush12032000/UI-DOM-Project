@@ -40,7 +40,7 @@ body{
     border-radius: 10px;
     background-color: white;
     width: 550px;
-    height: 519px;
+    height: 440px;
     /* border: 5px solid rgb(10, 9, 16); */
     line-height: 50px;
     margin: 10px;
@@ -117,7 +117,7 @@ font-size: 22px;
     color: #F25CFE;
     width: 228px;
     padding: 5px;
-height: 94px;
+height: 101px;
 border-radius: 10px;
 line-height: 22px;
 position: relative;
@@ -276,39 +276,39 @@ position: relative;
 @media  (min-width:300px) and (max-width:545px) {
     .main{
         width: 188%;
-        height: 1850px;
+        height: 1705px;
     }
     #b1{
-        top: -900px;
+        top: -806px;
     }
     #b2{
-        top: -895px;
+        top: -803px;
     }
     .cl{
-        top: 220px;
+        top: 338px;
     }
     #b3{
-        top: -892px;
+        top: -801px;
     }
     .img{
         top: 1px;
         left: 21px; 
     }
     #box3{
-        top: 254px;
+        top: 339px;
         width: 91%;
         margin: 10px;
     }
     .box4{
-        top: 262px;
+        top: 344px;
         margin-left: 13px;
         width: 96%;
     }
     #b4{
-        top: -50px;
+        top: -833px;
     }
     #b5{
-        top: -44px;
+        top: -34px;
     }
     
 }
@@ -325,31 +325,32 @@ position: relative;
         top: -823px;
     }
     .cl{
-        top: 157px;
+        top: 313px;
+        left: 5px;
     }
     #b3{
-        top: -824px;
+        top: -825px;
     }
     .img{
         top: 1px;
         left: 21px; 
     }
     #box3{ 
-    top: 194px;
+    top: 317px;
     width: 87%;
     margin: 10px;
 
     }
     .box4{
-        top: 227px;
+        top: 324px;
         margin-left: 13px;
         width: 92%;
     }
     #b4{
-        top: 12px;
+        top: -861px;
     }
     #b5{
-        top: 5px;
+        top: -15px;
     }
     
 }
