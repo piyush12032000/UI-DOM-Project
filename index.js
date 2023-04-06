@@ -17,7 +17,15 @@ if(hour>12){
 else{
     k5.innerText= 'AM' 
 }
-
+if(hour<10){
+    hour = "0"+hour;
+}
+if(minutes<10){
+mintues = "0"+ mintues;
+}
+if(sec<10){
+    sec= "0"+sec;
+}
 
 if (hour>=6 && hour < 12){
     kri.innerText = "GRAB SOME HEALTHY BREAKFAST!!!"
