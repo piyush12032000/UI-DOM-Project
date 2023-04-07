@@ -11,11 +11,15 @@ let minutes = time.getMinutes();
 let sec = time.getSeconds();
 
 let k5=document.getElementById("k5")
-if(hour>12){
+if(hour>=12){
     k5.innerText= 'PM'
 }
 else{
     k5.innerText= 'AM' 
+}
+if(hour>12)
+{
+    hour = hour -12;
 }
 if(hour<10){
     hour = "0"+hour;
@@ -26,6 +30,7 @@ mintues = "0"+ mintues;
 if(sec<10){
     sec= "0"+sec;
 }
+
 
 if (hour>=6 && hour < 12){
     kri.innerText = "GRAB SOME HEALTHY BREAKFAST!!!"
@@ -42,11 +47,7 @@ else{
 
 }
 
- if(hour>12){
-    hour= hour-12 ;  
- }
- 
- 
+
  let timeZone = ` ${hour} Hour `  
  console.log(timeZone);
  mytime[0].innerHTML=timeZone;
@@ -78,7 +79,7 @@ let Afternoon = document.getElementById('afternoon')
 let even = document.getElementById('evening')
 let nig = document.getElementById('sleep')
 let i = document.getElementById('b5')
- let w = document.getElementsByClassName('wake')
+ 
 
 
 function callMe(){
@@ -89,31 +90,38 @@ function callMe(){
     if(hr===parseInt(morning.value)){
         i.style.backgroundImage="url(./Component 30 1.jpg)" 
         text.innerText = "GOOD MORNING!! WAKE UP !!"
-        w[0].innerHTML=morning.value;
+
     }
-    else if (hr===parseInt(afternoon.value)){
+    else if (hr===parseInt(Afternoon.value)){
         text.innerHTML = "GOOD AFTERNOON !! TAKE SOME SLEEP"
         i.style.backgroundImage="url(./Afternoon.png)"
-         w[1].innerHTML=Afternoon.value;
+      
     }
     else if(hr=== parseInt(even.value)){
         text.innerHTML = "GOOD EVENING !!"
         i.style.backgroundImage="url(./lunch.png)"
-             w[2].innerHTML=even.value;
+        
     }
     else if(hr=== parseInt(nig.value)){
         text.innerHTML = " GOOD NIGHT !!"
         i.style.backgroundImage="url(./night1.png)"
-         w[3].innerHTML=nig.value;
         
     }
-
+    let morningtext = morning.options[morning.selectedIndex].textContent;
+    let morn = document.getElementById("A1")
+    morn.textContent=morningtext;
+ 
+ 
+    let morningtext1 = Afternoon.options[Afternoon.selectedIndex].textContent;
+    let morning1 = document.getElementById("A2")
+    morning1.textContent=morningtext1;
+ 
+ 
+    let morningtext2 = evening.options[evening.selectedIndex].textContent;
+    let morning2 = document.getElementById("A3")
+    morning2.textContent=morningtext2;
+ 
+    let morningtext3 = sleep.options[sleep.selectedIndex].textContent;
+    let morning3 = document.getElementById("A4")
+    morning3.textContent=morningtext3;
     }
-    
-
-    
-
-
-
-
-
