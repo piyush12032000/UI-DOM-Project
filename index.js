@@ -25,7 +25,7 @@ if(hour<10){
     hour = "0"+hour;
 }
 if(minutes<10){
-mintues = "0"+ mintues;
+mintues = "0"+ minutes;
 }
 if(sec<10){
     sec= "0"+sec;
