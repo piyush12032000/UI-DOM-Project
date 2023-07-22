@@ -17,10 +17,28 @@ if(hour>=12){
 else{
     k5.innerText= 'AM' 
 }
+
+if (hour>=6 && hour < 12){
+    kri.innerText = "GRAB SOME HEALTHY BREAKFAST!!!"
+} 
+else if (hour>=12 && hour<15){
+    kri.innerText = "LET'S HAVE SOME LUNCH !!"
+}
+else if (hour>=15 && hour<19){
+    kri.innerText = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!"
+}
+else{
+    kri.innerHTML = "CLOSE YOUR EYES AND GO TO SLEEP"
+}
 if(hour>12)
 {
     hour = hour -12;
 }
+
+
+
+
+
 if(hour<10){
     hour = "0"+hour;
 }
@@ -32,20 +50,6 @@ if(sec<10){
 }
 
 
-if (hour>=6 && hour < 12){
-    kri.innerText = "GRAB SOME HEALTHY BREAKFAST!!!"
-} 
-else if (hour>=12 && hour < 15){
-    kri.innerText = "LET'S HAVE SOME LUNCH !!"
-}
-else if (hour>=15 && hour <19){
-    kri.innerText = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!"
-}
-else{
-    kri.innerHTML = "CLOSE YOUR EYES AND GO TO SLEEP"
-
-
-}
 
 
  let timeZone = ` ${hour} Hour `  
